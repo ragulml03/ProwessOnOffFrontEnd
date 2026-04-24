@@ -1,0 +1,72 @@
+@model CareersViewModel
+@{ ViewData["Title"] = "Careers"; }
+
+<section class="pt-24 pb-16 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 bg-[#405BFF]/10 border border-[#405BFF]/30 text-[#405BFF] text-xs font-semibold px-4 py-2 rounded-full mb-8 uppercase tracking-widest">
+            We're Hiring
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-5 leading-tight">@Model.PageTitle</h1>
+        <p class="text-white/50 text-lg leading-relaxed">@Model.PageSubtitle</p>
+    </div>
+</section>
+
+<section class="pb-28 px-6">
+    <div class="max-w-4xl mx-auto">
+        <p class="text-sm text-white/30 uppercase tracking-widest font-semibold mb-6">
+            @Model.Jobs.Count Open Roles
+        </p>
+
+        <div class="space-y-3">
+            @foreach (var job in Model.Jobs)
+            {
+                <div class="group bg-white/3 border border-white/8 rounded-xl p-6 hover:bg-[#405BFF]/6 hover:border-[#405BFF]/25 transition-all duration-200 cursor-pointer">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                        <div class="flex-1">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="text-xs font-semibold text-[#405BFF] bg-[#405BFF]/10 border border-[#405BFF]/20 px-2.5 py-1 rounded-full">
+                                    @job.Department
+                                </span>
+                                <span class="text-xs text-white/30 bg-white/5 border border-white/8 px-2.5 py-1 rounded-full">
+                                    @job.Type
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white mb-1.5">@job.Title</h3>
+                            <p class="text-white/45 text-sm leading-relaxed">@job.Description</p>
+                        </div>
+                        <div class="flex md:flex-col items-start md:items-end gap-3 md:gap-2 shrink-0">
+                            <span class="text-white/35 text-sm flex items-center gap-1.5">
+                                <svg class="w-3.5 h-3.5 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                @job.Location
+                            </span>
+                            <button class="text-sm text-[#405BFF] group-hover:text-white border border-[#405BFF]/30 group-hover:bg-[#405BFF] group-hover:border-[#405BFF] px-4 py-2 rounded-lg transition-all duration-150 font-medium whitespace-nowrap js-apply-btn">
+                                Apply Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll(".js-apply-btn").forEach((btn) => {
+            btn.addEventListener("click", async () => {
+                try {
+                    await fetch("/api/track-conversion", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ source: "dotnet-careers", action: "apply-click" })
+                    });
+                } catch (error) {
+                    console.warn("conversion tracking failed", error);
+                }
+            });
+        });
+    </script>
+}

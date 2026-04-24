@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/ragullakshmanan/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/ragullakshmanan/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">7.0.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/Users/ragullakshmanan/.nuget/packages/" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/CHANGELOG.md" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/CHANGELOG.md')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CHANGELOG.md</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/CONTRIBUTING.md" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/CONTRIBUTING.md')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CONTRIBUTING.md</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.Json.md" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.Json.md')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>LaunchDarkly.Sdk.Json.md</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.Server.Integrations.md" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.Server.Integrations.md')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>LaunchDarkly.Sdk.Server.Integrations.md</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.Server.Interfaces.md" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.Server.Interfaces.md')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>LaunchDarkly.Sdk.Server.Interfaces.md</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.Server.Subsystems.md" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.Server.Subsystems.md')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>LaunchDarkly.Sdk.Server.Subsystems.md</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.Server.md" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.Server.md')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>LaunchDarkly.Sdk.Server.md</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.md" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/LaunchDarkly.Sdk.md')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>LaunchDarkly.Sdk.md</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/README.md" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/README.md')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>README.md</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/docfx.json" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/docfx.json')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>docfx.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/index.md" Condition="Exists('$(NuGetPackageRoot)launchdarkly.serversdk/8.12.0/contentFiles/any/net8.0/index.md')">
+      <NuGetPackageId>LaunchDarkly.ServerSdk</NuGetPackageId>
+      <NuGetPackageVersion>8.12.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>index.md</Link>
+    </Content>
+  </ItemGroup>
+</Project>

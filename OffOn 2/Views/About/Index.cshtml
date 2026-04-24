@@ -1,0 +1,57 @@
+@model AboutViewModel
+@{ ViewData["Title"] = "About"; }
+
+<section class="pt-24 pb-16 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 bg-[#405BFF]/10 border border-[#405BFF]/30 text-[#405BFF] text-xs font-semibold px-4 py-2 rounded-full mb-8 uppercase tracking-widest">
+            Our Story
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">@Model.MissionTitle</h1>
+        <p class="text-white/55 text-lg leading-relaxed">@Model.MissionText</p>
+    </div>
+</section>
+
+<section class="py-20 px-6 bg-[#012B5E]/15 border-y border-white/5">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-center mb-12">What we stand for</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            @foreach (var v in Model.Values)
+            {
+                <div class="bg-white/3 border border-white/8 rounded-xl p-7">
+                    <div class="w-10 h-10 bg-[#405BFF]/15 border border-[#405BFF]/25 rounded-lg flex items-center justify-center mb-5">
+                        <div class="w-2 h-2 bg-[#405BFF] rounded-full"></div>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">@v.Title</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">@v.Description</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold mb-3">Meet the team</h2>
+            <p class="text-white/40 text-sm">The people building the future of feature delivery.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            @foreach (var m in Model.TeamMembers)
+            {
+                <div class="group text-center">
+                    <div class="w-24 h-24 mx-auto rounded-2xl bg-[#012B5E] border border-white/10 flex items-center justify-center mb-4 group-hover:border-[#405BFF]/40 transition-colors overflow-hidden">
+                        <img src="@m.Image" alt="@m.Name"
+                             class="w-full h-full object-cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                        <span class="text-2xl font-bold text-white/30 hidden w-full h-full items-center justify-center">
+                            @(m.Name.Length > 0 ? m.Name[0].ToString() : "?")
+                        </span>
+                    </div>
+                    <p class="font-semibold text-white">@m.Name</p>
+                    <p class="text-white/40 text-sm mt-1">@m.Role</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>

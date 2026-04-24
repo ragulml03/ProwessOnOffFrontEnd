@@ -1,0 +1,149 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "OffOn/1.0.0": {
+        "dependencies": {
+          "LaunchDarkly.ServerSdk": "8.12.0",
+          "Microsoft.AspNetCore.SpaServices.Extensions": "10.0.6"
+        },
+        "runtime": {
+          "OffOn.dll": {}
+        }
+      },
+      "LaunchDarkly.Cache/1.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/LaunchDarkly.Cache.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
+      "LaunchDarkly.CommonSdk/7.2.0": {
+        "dependencies": {
+          "LaunchDarkly.Logging": "2.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/LaunchDarkly.CommonSdk.dll": {
+            "assemblyVersion": "7.2.0.0",
+            "fileVersion": "7.2.0.0"
+          }
+        }
+      },
+      "LaunchDarkly.EventSource/5.3.0": {
+        "dependencies": {
+          "LaunchDarkly.Logging": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/LaunchDarkly.EventSource.dll": {
+            "assemblyVersion": "5.3.0.0",
+            "fileVersion": "5.3.0.0"
+          }
+        }
+      },
+      "LaunchDarkly.InternalSdk/3.6.1": {
+        "dependencies": {
+          "LaunchDarkly.CommonSdk": "7.2.0",
+          "LaunchDarkly.Logging": "2.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/LaunchDarkly.InternalSdk.dll": {
+            "assemblyVersion": "3.6.1.0",
+            "fileVersion": "3.6.1.0"
+          }
+        }
+      },
+      "LaunchDarkly.Logging/2.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/LaunchDarkly.Logging.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "LaunchDarkly.ServerSdk/8.12.0": {
+        "dependencies": {
+          "LaunchDarkly.Cache": "1.0.2",
+          "LaunchDarkly.CommonSdk": "7.2.0",
+          "LaunchDarkly.EventSource": "5.3.0",
+          "LaunchDarkly.InternalSdk": "3.6.1",
+          "LaunchDarkly.Logging": "2.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/LaunchDarkly.ServerSdk.dll": {
+            "assemblyVersion": "8.12.0.0",
+            "fileVersion": "8.12.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.SpaServices.Extensions/10.0.6": {
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.SpaServices.Extensions.dll": {
+            "assemblyVersion": "10.0.6.0",
+            "fileVersion": "10.0.626.17701"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OffOn/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LaunchDarkly.Cache/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0bEnUVFVeW1TTDXb/bW6kS3FLQTLeGtw7Xh8yt6WNO56utVmtgcrMLvcnF6yeTn+N4FXrKfW09KkLNmK8YYQvw==",
+      "path": "launchdarkly.cache/1.0.2",
+      "hashPath": "launchdarkly.cache.1.0.2.nupkg.sha512"
+    },
+    "LaunchDarkly.CommonSdk/7.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YLT9rl0ooxHVNWtSsKBjtqdBt8Ysg99sXHAO1G8dcSH4B6yv3qR0lyCo6GEb9EQpUuGdneGqO7Bs7K2B8F+lTg==",
+      "path": "launchdarkly.commonsdk/7.2.0",
+      "hashPath": "launchdarkly.commonsdk.7.2.0.nupkg.sha512"
+    },
+    "LaunchDarkly.EventSource/5.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i++YvdrzvTc1tOxfVreU2yjo/E+iTFcVtwiB4PZ/3uTouNdhABLbJfz1jmGN3jmnvJKWhsMeEZLZM0dzkI+PXQ==",
+      "path": "launchdarkly.eventsource/5.3.0",
+      "hashPath": "launchdarkly.eventsource.5.3.0.nupkg.sha512"
+    },
+    "LaunchDarkly.InternalSdk/3.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qkbqHzz3AruAPW5PfbwQEM883p2ArHG3xun8IONmBT/QdiAhLFqh/5vxMCUsT1GfPyyly4S0HxYx3GP01Gc3Pg==",
+      "path": "launchdarkly.internalsdk/3.6.1",
+      "hashPath": "launchdarkly.internalsdk.3.6.1.nupkg.sha512"
+    },
+    "LaunchDarkly.Logging/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lsLKNqAZ7HIlkdTIrf4FetfRA1SUDE3WlaZQn79aSVkLjYWEhUhkDDK7hORGh4JoA3V2gXN+cIvJQax2uR/ijA==",
+      "path": "launchdarkly.logging/2.0.0",
+      "hashPath": "launchdarkly.logging.2.0.0.nupkg.sha512"
+    },
+    "LaunchDarkly.ServerSdk/8.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZxX2F4pZhHIuskgZqPGv2UoSVcPbwW7vsTZQWcg/tDaS3sw0ykgNhmSlE1rzf1l4Lsz/JBKtfKQLIo6A9tNm7A==",
+      "path": "launchdarkly.serversdk/8.12.0",
+      "hashPath": "launchdarkly.serversdk.8.12.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SpaServices.Extensions/10.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VCSqyBOm2bIP0VUTq1IbAJQQ1MWQxe9kItv39II8QqwuM7BSU2KvPOmQUAtcZoAFjZDUeEo4PJyZGnl79L02cQ==",
+      "path": "microsoft.aspnetcore.spaservices.extensions/10.0.6",
+      "hashPath": "microsoft.aspnetcore.spaservices.extensions.10.0.6.nupkg.sha512"
+    }
+  }
+}
